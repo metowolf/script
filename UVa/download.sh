@@ -32,7 +32,7 @@ do
 		{
 			beginat=$(date +%s)
 			echo -e "\e[5;32m[Starting]\e[0m to download \e[4;34m $id \e[0m in UVa Volume \e[4;34m $volume \e[0m..."
-			if wget --tries=2 --timeout=45 -q https://uva.onlinejudge.org/external/$volume/$id.pdf
+			if curl --retry 2 --connect-timeout 45 --silent -O https://uva.onlinejudge.org/external/$volume/$id.pdf
 			then
 			{
 				endat=$(date +%s)
