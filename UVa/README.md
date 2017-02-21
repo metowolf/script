@@ -19,6 +19,8 @@ UVa Online Judge 题目下载，批量拉取 PDF 题目。
 
 ## Run
 
+This script is incompatible with zsh.
+
 To run the script with a default number of 20 threads, do the following:
 
 ```
