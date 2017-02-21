@@ -7,6 +7,15 @@ UVa Online Judge 题目下载，批量拉取 PDF 题目。
  - [x] Multi-Thread using FIFO (多线程)
  - [x] Errorlog (错误日志)
  - [x] Timing (下载计时)
+ - [x] MultiPlatform
+
+## Platform
+
+ - [x] WSL
+ - [x] MinGW
+ - [x] GNU/Linux
+ - [x] MacOS
+ - [x] BSDs
 
 ## Run
 
