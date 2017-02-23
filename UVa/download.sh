@@ -1,5 +1,5 @@
 #!/bin/bash
-trap "echo -e \"\n\e[1;31m[Error]\e[0m The script is terminated unexpectedly.\" | tee -a ../errorlog" SIGINT
+trap "echo -e \"\n\e[1;31m[Error]\e[0m The script is terminated unexpectedly.\" | tee -a ./errorlog" SIGINT
 maxthread=20
 if [ $(($1)) -gt 0 ]
 then
