@@ -15,7 +15,7 @@ class bilibili{
 			'status' => 0, // 0 表示禁用
 		),
         // 多用户以此类推
-    );
+	);
 
 	public function display(){
 		header('Content-Type: text/txt; charset=UTF-8');
@@ -26,10 +26,13 @@ class bilibili{
 				$a=$data['data']['user_intimacy'];
 		        $b=$data['data']['user_next_intimacy'];
 		        $per=round($a/$b*100,2);
+				if(!isset($result['cron']['data'][1]))$msg='OK';
+				else $msg='@'.date('Y-m-d H:i:s',$result['cron']['data'][1]);
+
 		        echo "name   : {$data['data']['uname']} \n";
 		        echo "level  : {$data['data']['user_level']} \n";
 		        echo "exp    : {$a}/{$b} [{$per}%]\n";
-				echo "status : {$result['cron']['msg']}\n";
+				echo "status : {$msg}\n";
 		        echo "===============================\n";
 			}
 			else{
