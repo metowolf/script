@@ -5,13 +5,14 @@ UVa Online Judge 题目下载，批量拉取 PDF 题目。
 
 ## Function
 
- - [x] Multi-Thread using FIFO (多线程)
+ - [x] Multi-Thread using FIFO (bash-ver) (多线程)
  - [x] Errorlog (错误日志)
  - [x] Timing (下载计时)
  - [x] MultiPlatform
 
 ## Platform
 
+ - [x] Windows (PowerShell-ver)
  - [x] WSL
  - [x] MinGW
  - [x] GNU/Linux
@@ -20,9 +21,8 @@ UVa Online Judge 题目下载，批量拉取 PDF 题目。
 
 ## Run
 
-This script is incompatible with zsh.
 
-To run the script with a default number of 20 threads, do the following:
++ To run the bash script with a default number of 20 threads, do the following:
 
 ```
 $ bash download.sh
@@ -35,6 +35,13 @@ $ bash download.sh "threads" (without quotes)
 e.g.
 ```
 $ bash download.sh 20
+```
+**Notice:** This bash script is incompatible with zsh.
+
++ To run the PowerShell script, do the following:
+
+```
+$ powershell -executionpolicy bypass -file UVadownload.ps1
 ```
 
 ## License
